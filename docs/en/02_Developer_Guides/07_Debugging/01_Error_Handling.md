@@ -141,11 +141,11 @@ SilverStripe\Core\Injector\Injector:
   LogFileHandler:
     class: Monolog\Handler\StreamHandler
     constructor:
-      - "../silverstripe.log"
+      - "./silverstripe.log"
       - "info"
 ```
 
-The log file will be relative to the framework/ path, so "../silverstripe.log" will create a file in your project root.
+The log file will be relative to your project root.
 
 ### Disabling the default handler
 
